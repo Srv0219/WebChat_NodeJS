@@ -1,16 +1,10 @@
-
-* {
-  box-sizing: border-box;
-}
-.container{
+.container {
   max-width: 350px;
   margin: auto;
   height: 60vh;
   overflow-y: scroll;
   overflow-x: hidden;
   margin-bottom: 23px;
- 
- 
 }
 
 .logo {
@@ -20,39 +14,19 @@
   margin-bottom: 10px;
   width: 30px;
   height: 30px;
-  
-}
-
-
-.message {
-  padding: 0 20px;
-  margin-top: 20px;
 }
 
 .left,
 .right {
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding: 6px 9px;
   max-width: 50%;
   clear: both;
-  position:relative;
+  position: relative;
   font-size: 10px;
-  font-family: 'Poppins', sans-serif;
- 
+  font-family: "Poppins", sans-serif;
 }
-
-.centre{
-  text-align: center;
-  padding:  3px;
-  clear:both;
-  font-weight: bold;
-  font-size: 10px;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 5px 5px 5px 5px;
-  background-color: #FFDEAD;
-  color: black;
-}
-
 
 .left {
   float: left;
@@ -66,8 +40,6 @@
   color: black;
 }
 
-
-
 .right {
   float: right;
   margin-left: auto;
@@ -77,15 +49,27 @@
   -o-border-radius: 8px 8px 0px 8px;
   -ms-border-radius: 8px 8px 0px 8px;
   border-radius: 8px 8px 0px 8px;
-  background-color: #1e90ff;
+  background-color: #FFAA33;
   color: white;
 }
-
-
-
-#send-container{
+.centre {
   display: block;
- 
+  margin: auto;
+  max-width: 100px;
+  text-align: center;
+  padding: 2px;
+  clear: both;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #ffdead;
+  color: black;
+}
+
+#send-container {
+  display: block;
+
   text-align: center;
 }
 .button {
@@ -93,9 +77,9 @@
   border-radius: 4px;
   background-color: dodgerblue;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
-  
+
   padding: 10px;
   width: 100px;
   transition: all 0.5s;
@@ -103,7 +87,7 @@
   margin: 5px;
 }
 
-.button  {
+.button {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -111,7 +95,7 @@
 }
 
 .button:after {
-  content: '\00bb';
+  content: "\00bb";
   position: relative;
   opacity: 0;
   top: 0;
@@ -119,7 +103,7 @@
   transition: 0.5s;
 }
 
-.button:hover  {
+.button:hover {
   padding-right: 25px;
 }
 
@@ -128,17 +112,18 @@
   right: 0;
 }
 
-input[type=text] {
-  
+input[type="text"] {
   width: 200px;
-  height:36px;
+  height: 30px;
   position: relative;
-  left: 0;
+  border-radius: 4px 4px 4px 4px;
   outline: none;
   border: 2px solid #cdcdcd;
-  border-color: rgba(0, 0, 0, .15);
+  border-color: rgba(0, 0, 0, 0.15);
   background-color: white;
-  font-size: 16px;
+  
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
 }
 
 .textBox {
