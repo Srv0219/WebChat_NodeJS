@@ -2,9 +2,14 @@
   max-width: 350px;
   margin: auto;
   height: 60vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
+   overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
   margin-bottom: 23px;
+}
+.container::-webkit-scrollbar { 
+    width: 0;
+    height: 0;  /* Safari and Chrome */
 }
 
 .logo {
@@ -49,10 +54,10 @@
   -o-border-radius: 8px 8px 0px 8px;
   -ms-border-radius: 8px 8px 0px 8px;
   border-radius: 8px 8px 0px 8px;
-  background-color: #ffaa33;
+  background-color: #03A9F4;
   color: white;
 }
-.centre {
+.joinedchat {
   display: block;
   margin: auto;
   max-width: 100px;
@@ -62,11 +67,29 @@
   font-weight: bold;
   font-size: 10px;
   font-family: "Poppins", sans-serif;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 3px 3px 3px 3px;
+  background-color: #ADD8E6 ;
   background-color: #ffdead;
   color: black;
 }
+
+.leftchat{
+  display: block;
+  margin: auto;
+  max-width: 100px;
+  text-align: center;
+  padding: 2px;
+  clear: both;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 3px 3px 3px 3px;
+  background-color: #ADD8E6 ;
+  color: black;
+}
+
 .head {
+  
   display: block;
   margin: auto;
   text-align: center;
