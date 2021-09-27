@@ -4,8 +4,11 @@ const socket = io('http://localhost:8000');
 const form = document.getElementById('send-container');
 const messageInput = document.getElementById('messageImp');
 const messageContainer = document.querySelector(".container");
-window.scrollTo(0, messageContainer.innerHeight);
+const messageButton = document.getElementById('messageBtn');
 
+function scrollToBottom() {
+    messageContainer.scrollTop = messageContainer.scrollHeight;
+}
 
 const append = (message, position) => {
     const messageElement = document.createElement('div');
@@ -13,6 +16,7 @@ const append = (message, position) => {
     messageElement.classList.add('message');
     messageElement.classList.add(position);
     messageContainer.append(messageElement);
+    scrollToBottom();
 
 }
 
@@ -34,10 +38,13 @@ socket.on('left', name => {
 })
 
 
+
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const message = messageInput.value;
-    append(`You: ${message}`, 'right');
+    append(`You: ${message} `, 'right');
     socket.emit('send', message);
     messageInput.value = ''
 })
+

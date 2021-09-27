@@ -7,6 +7,7 @@
     <title>chat</title>
     <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
     <script defer src="js/client.js"></script>
+    <script src="js/style.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,9 +21,9 @@
     <nav>
       <img class="logo" src="chat.png" alt="logo" />
     </nav>
-
+     <header class="head" >Group Chat</header>
     <div class="container">
-      <div class="head">Group Chat</div>
+     
       <!-- <div class="message right">hello</div>
       <div class="message left">
         <img class="logo" src="chat.png" alt="logo" />
@@ -34,6 +35,8 @@
       <div class="joinedchat">Sourav joined chat</div>
        <div class="message left">Can't talk </div>
       <div class="leftchat">Sourav left chat</div> -->
+       <div class="message left">Good</div>
+      <div class="message right">What's up bro </div>
       
        
       
@@ -41,7 +44,8 @@
     <div class="send">
       <form action="#" id="send-container">
         <input type="text" class="textBox" name="messageImp" id="messageImp" />
-        <button class="button" type="submit">Send</button>
+
+        <button  class="button" type="submit" id="messageBtn"  >Send</button>
       </form>
     </div>
   </body>
